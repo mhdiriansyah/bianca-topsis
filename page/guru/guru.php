@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="pull-left">
-                    <h3 class="panel-title">Manajemen Data Guru</h3>
+                    <h3 class="panel-title">Manajemen Data Wali Kelas</h3>
                     <p class="panel-subtitle"></p>
                 </div>
                 <div class="pull-right">

@@ -27,12 +27,12 @@
 							            '<i class="fa fa-info-circle"></i> Data sudah pernah diisi sebelumnya, silahkan cek kembali <a href="?page=datasiswapjb">disini</a>'.
                                     '</div>';
                         } else {
-            
-                            if ($nil>=1 && $nil<31){
+
+                            if ($nil>=1 && $nil<35){
                                 $status = 4;
-                            } else if ($nil>=31 && $nil<61){
+                            } else if ($nil>=36 && $nil<70){
                                 $status = 3;
-                            } else if ($nil>=61 && $nil<96){
+                            } else if ($nil>=71 && $nil<105){
                                 $status = 2;
                             } else {
                                 $status = 1;

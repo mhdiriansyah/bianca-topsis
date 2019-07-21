@@ -27,7 +27,7 @@
                     <span class="icon"><i class="fa fa-user"></i></span>
                     <p>
                         <span class="number"><?= $guru ?></span>
-                        <span class="title">Guru</span>
+                        <span class="title">Wali Kelas</span>
                     </p>
                 </div>
             </div>

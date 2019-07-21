@@ -8,7 +8,7 @@
                     <div id="subPages" class="collapse ">
                         <ul class="nav">
                             <li><a href="?page=kriteria" class="">Data Kriteria</a></li>
-                            <li><a href="?page=guru" class="">Data Guru</a></li>
+                            <li><a href="?page=guru" class="">Data Wali Kelas</a></li>
                             <li><a href="?page=jurusan" class="">Data Jurusan</a></li>
                             <li><a href="?page=siswa" class="">Data Siswa</a></li>
                         </ul>

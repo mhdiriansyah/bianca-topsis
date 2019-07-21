@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 15, 2019 at 12:34 PM
+-- Generation Time: Jul 21, 2019 at 10:28 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -84,7 +84,64 @@ CREATE TABLE `tbl_kehadiran` (
 --
 
 INSERT INTO `tbl_kehadiran` (`id_kehadiran`, `nis`, `sakit`, `ijin`, `alpa`, `terlambat`, `status_kehadiran`) VALUES
-('KEHADIRAN0001', 6175, 0, 0, 0, 0, 2);
+('KEHADIRAN0001', 6175, 0, 0, 0, 0, 2),
+('KEHADIRAN0002', 6179, 0, 0, 0, 0, 2),
+('KEHADIRAN0003', 6187, 0, 0, 0, 0, 2),
+('KEHADIRAN0004', 6214, 4, 0, 0, 0, 2),
+('KEHADIRAN0005', 6221, 0, 0, 0, 0, 2),
+('KEHADIRAN0006', 6232, 0, 0, 0, 0, 2),
+('KEHADIRAN0007', 6240, 0, 0, 0, 0, 2),
+('KEHADIRAN0008', 6244, 0, 0, 0, 0, 2),
+('KEHADIRAN0009', 6248, 1, 3, 0, 0, 2),
+('KEHADIRAN0010', 6251, 0, 0, 0, 0, 2),
+('KEHADIRAN0011', 6257, 2, 0, 0, 0, 2),
+('KEHADIRAN0012', 6273, 0, 0, 0, 0, 2),
+('KEHADIRAN0013', 6279, 2, 0, 0, 0, 2),
+('KEHADIRAN0014', 6287, 0, 0, 0, 0, 2),
+('KEHADIRAN0015', 6288, 0, 0, 0, 0, 2),
+('KEHADIRAN0016', 6294, 0, 0, 0, 0, 2),
+('KEHADIRAN0017', 6176, 0, 0, 0, 0, 2),
+('KEHADIRAN0018', 6177, 0, 0, 0, 0, 2),
+('KEHADIRAN0019', 6192, 0, 0, 0, 0, 2),
+('KEHADIRAN0020', 6210, 0, 0, 0, 1, 1),
+('KEHADIRAN0021', 6211, 0, 0, 0, 0, 2),
+('KEHADIRAN0022', 6226, 0, 0, 0, 0, 2),
+('KEHADIRAN0023', 6235, 0, 0, 0, 0, 2),
+('KEHADIRAN0024', 6245, 0, 0, 0, 0, 2),
+('KEHADIRAN0025', 6253, 0, 0, 0, 0, 2),
+('KEHADIRAN0026', 6255, 0, 0, 0, 0, 2),
+('KEHADIRAN0027', 6258, 0, 0, 0, 0, 2),
+('KEHADIRAN0028', 6268, 0, 0, 0, 2, 1),
+('KEHADIRAN0029', 6274, 0, 0, 0, 0, 2),
+('KEHADIRAN0030', 6281, 0, 0, 0, 2, 1),
+('KEHADIRAN0031', 6289, 0, 0, 0, 0, 2),
+('KEHADIRAN0032', 6302, 0, 0, 0, 0, 2),
+('KEHADIRAN0033', 6173, 3, 0, 0, 0, 2),
+('KEHADIRAN0034', 6181, 0, 0, 0, 0, 2),
+('KEHADIRAN0035', 6185, 0, 0, 0, 0, 2),
+('KEHADIRAN0036', 6219, 0, 0, 0, 0, 2),
+('KEHADIRAN0037', 6220, 0, 0, 0, 0, 2),
+('KEHADIRAN0038', 6223, 1, 0, 0, 0, 2),
+('KEHADIRAN0039', 6230, 0, 0, 0, 0, 2),
+('KEHADIRAN0040', 6231, 0, 0, 0, 0, 2),
+('KEHADIRAN0041', 6234, 0, 0, 0, 0, 2),
+('KEHADIRAN0042', 6236, 0, 0, 0, 0, 2),
+('KEHADIRAN0043', 6261, 2, 0, 0, 0, 2),
+('KEHADIRAN0044', 6275, 0, 0, 0, 0, 2),
+('KEHADIRAN0045', 6278, 7, 0, 0, 0, 2),
+('KEHADIRAN0046', 6290, 0, 0, 0, 0, 2),
+('KEHADIRAN0047', 6292, 0, 0, 0, 0, 2),
+('KEHADIRAN0048', 6300, 0, 0, 0, 0, 2),
+('KEHADIRAN0049', 6306, 0, 0, 0, 0, 2),
+('KEHADIRAN0050', 6309, 0, 0, 0, 0, 2),
+('KEHADIRAN0051', 6182, 0, 0, 0, 0, 2),
+('KEHADIRAN0052', 6190, 2, 0, 0, 0, 2),
+('KEHADIRAN0053', 6213, 0, 0, 0, 1, 1),
+('KEHADIRAN0054', 6239, 1, 0, 0, 2, 1),
+('KEHADIRAN0055', 6243, 0, 0, 0, 0, 2),
+('KEHADIRAN0056', 6263, 1, 0, 0, 0, 2),
+('KEHADIRAN0057', 6284, 0, 0, 0, 0, 2),
+('KEHADIRAN0058', 6304, 5, 0, 0, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -108,7 +165,64 @@ CREATE TABLE `tbl_kepribadian` (
 --
 
 INSERT INTO `tbl_kepribadian` (`id_kepribadian`, `nis`, `nilai_1`, `nilai_2`, `nilai_3`, `nilai_4`, `rata_rata`, `status_kepribadian`) VALUES
-('KEPRIBADIAN0001', 6175, 85, 83, 68, 85, '80.25', 3);
+('KEPRIBADIAN0001', 6175, 85, 83, 68, 85, '80.25', 3),
+('KEPRIBADIAN0002', 6179, 53, 55, 40, 45, '48.25', 1),
+('KEPRIBADIAN0003', 6187, 93, 85, 65, 73, '79.00', 3),
+('KEPRIBADIAN0004', 6214, 85, 63, 70, 78, '74.00', 3),
+('KEPRIBADIAN0005', 6221, 78, 88, 90, 60, '79.00', 3),
+('KEPRIBADIAN0006', 6232, 93, 90, 63, 83, '82.25', 4),
+('KEPRIBADIAN0007', 6240, 88, 68, 65, 83, '76.00', 3),
+('KEPRIBADIAN0008', 6244, 88, 83, 68, 90, '82.25', 4),
+('KEPRIBADIAN0009', 6248, 53, 75, 88, 73, '72.25', 3),
+('KEPRIBADIAN0010', 6251, 83, 95, 85, 93, '89.00', 4),
+('KEPRIBADIAN0011', 6257, 68, 58, 65, 70, '65.25', 2),
+('KEPRIBADIAN0012', 6273, 53, 58, 68, 40, '54.75', 1),
+('KEPRIBADIAN0013', 6279, 85, 80, 90, 85, '85.00', 4),
+('KEPRIBADIAN0014', 6287, 55, 58, 68, 63, '61.00', 2),
+('KEPRIBADIAN0015', 6288, 65, 38, 55, 50, '52.00', 1),
+('KEPRIBADIAN0016', 6294, 63, 78, 63, 60, '66.00', 2),
+('KEPRIBADIAN0017', 6176, 65, 88, 88, 90, '82.75', 4),
+('KEPRIBADIAN0018', 6177, 93, 93, 75, 93, '88.50', 4),
+('KEPRIBADIAN0019', 6192, 53, 50, 68, 68, '59.75', 1),
+('KEPRIBADIAN0020', 6210, 70, 75, 35, 63, '60.75', 1),
+('KEPRIBADIAN0021', 6211, 88, 95, 90, 80, '88.25', 4),
+('KEPRIBADIAN0022', 6226, 58, 85, 90, 65, '74.50', 3),
+('KEPRIBADIAN0023', 6235, 93, 68, 70, 93, '81.00', 4),
+('KEPRIBADIAN0024', 6245, 80, 73, 50, 68, '67.75', 2),
+('KEPRIBADIAN0025', 6253, 75, 85, 73, 80, '78.25', 3),
+('KEPRIBADIAN0026', 6255, 73, 90, 88, 93, '86.00', 4),
+('KEPRIBADIAN0027', 6258, 80, 80, 80, 73, '78.25', 3),
+('KEPRIBADIAN0028', 6268, 68, 90, 88, 83, '82.25', 4),
+('KEPRIBADIAN0029', 6274, 70, 90, 93, 93, '86.50', 4),
+('KEPRIBADIAN0030', 6281, 58, 70, 90, 73, '72.75', 3),
+('KEPRIBADIAN0031', 6289, 93, 80, 95, 98, '91.50', 4),
+('KEPRIBADIAN0032', 6302, 85, 88, 98, 88, '89.75', 4),
+('KEPRIBADIAN0033', 6173, 63, 75, 58, 65, '65.25', 2),
+('KEPRIBADIAN0034', 6181, 73, 90, 78, 58, '74.75', 3),
+('KEPRIBADIAN0035', 6185, 53, 63, 70, 70, '64.00', 2),
+('KEPRIBADIAN0036', 6219, 70, 60, 73, 68, '67.75', 2),
+('KEPRIBADIAN0037', 6220, 50, 55, 33, 58, '49.00', 1),
+('KEPRIBADIAN0038', 6223, 75, 60, 88, 90, '78.25', 3),
+('KEPRIBADIAN0039', 6230, 65, 53, 58, 75, '62.75', 2),
+('KEPRIBADIAN0040', 6231, 85, 80, 80, 80, '81.25', 4),
+('KEPRIBADIAN0041', 6234, 58, 40, 58, 45, '50.25', 1),
+('KEPRIBADIAN0042', 6236, 53, 60, 73, 70, '64.00', 2),
+('KEPRIBADIAN0043', 6261, 80, 65, 48, 68, '65.25', 2),
+('KEPRIBADIAN0044', 6275, 85, 70, 68, 73, '74.00', 3),
+('KEPRIBADIAN0045', 6278, 88, 65, 55, 53, '65.25', 2),
+('KEPRIBADIAN0046', 6290, 63, 63, 60, 75, '65.25', 2),
+('KEPRIBADIAN0047', 6292, 80, 95, 80, 75, '82.50', 4),
+('KEPRIBADIAN0048', 6300, 65, 90, 85, 90, '82.50', 4),
+('KEPRIBADIAN0049', 6306, 85, 93, 75, 93, '86.50', 4),
+('KEPRIBADIAN0050', 6309, 93, 80, 65, 83, '80.25', 3),
+('KEPRIBADIAN0051', 6182, 55, 60, 88, 68, '67.75', 2),
+('KEPRIBADIAN0052', 6190, 65, 55, 78, 75, '68.25', 2),
+('KEPRIBADIAN0053', 6213, 90, 65, 65, 70, '72.50', 3),
+('KEPRIBADIAN0054', 6239, 68, 68, 68, 63, '66.75', 2),
+('KEPRIBADIAN0055', 6243, 78, 85, 78, 90, '82.75', 4),
+('KEPRIBADIAN0056', 6263, 65, 85, 85, 68, '75.75', 3),
+('KEPRIBADIAN0057', 6284, 65, 78, 78, 68, '72.25', 3),
+('KEPRIBADIAN0058', 6304, 58, 63, 55, 78, '63.50', 2);
 
 -- --------------------------------------------------------
 
@@ -131,7 +245,64 @@ CREATE TABLE `tbl_kesehatanfisik` (
 --
 
 INSERT INTO `tbl_kesehatanfisik` (`id_kesehatanfisik`, `nis`, `tb`, `warna`, `lari`, `tht`, `status_kesehatanfisik`) VALUES
-('KESFISIK0001', 6175, 160, 0, 1, 0, 2);
+('KESFISIK0001', 6175, 163, 0, 1, 0, 2),
+('KESFISIK0002', 6179, 165, 0, 1, 0, 2),
+('KESFISIK0003', 6187, 154, 0, 1, 0, 2),
+('KESFISIK0004', 6214, 167, 0, 1, 0, 2),
+('KESFISIK0005', 6221, 169, 0, 1, 0, 2),
+('KESFISIK0006', 6232, 146, 0, 1, 0, 1),
+('KESFISIK0007', 6240, 153, 0, 1, 0, 2),
+('KESFISIK0008', 6244, 147, 0, 1, 0, 1),
+('KESFISIK0009', 6248, 172, 0, 1, 0, 2),
+('KESFISIK0010', 6251, 154, 0, 1, 0, 2),
+('KESFISIK0011', 6257, 160, 0, 1, 0, 2),
+('KESFISIK0012', 6273, 0, 0, 0, 0, 1),
+('KESFISIK0013', 6279, 163, 0, 1, 0, 2),
+('KESFISIK0014', 6287, 159, 0, 1, 0, 2),
+('KESFISIK0015', 6288, 160, 0, 1, 0, 2),
+('KESFISIK0016', 6294, 153, -3, 1, 0, 1),
+('KESFISIK0017', 6176, 165, 0, 1, 0, 2),
+('KESFISIK0018', 6177, 170, 0, 1, 0, 2),
+('KESFISIK0019', 6192, 176, 0, 1, 0, 2),
+('KESFISIK0020', 6210, 164, 0, 1, 0, 2),
+('KESFISIK0021', 6211, 158, 0, 1, 0, 1),
+('KESFISIK0022', 6226, 179, 0, 1, 0, 2),
+('KESFISIK0023', 6235, 0, 0, 0, 0, 1),
+('KESFISIK0024', 6245, 0, 0, 0, 0, 1),
+('KESFISIK0025', 6253, 169, 0, 1, 0, 2),
+('KESFISIK0026', 6255, 166, 0, 1, 0, 2),
+('KESFISIK0027', 6258, 165, 0, 1, 0, 2),
+('KESFISIK0028', 6268, 153, 0, 1, 0, 2),
+('KESFISIK0029', 6274, 153, 0, 1, 0, 2),
+('KESFISIK0030', 6281, 183, 0, 1, 0, 2),
+('KESFISIK0031', 6289, 157, 0, 1, 0, 2),
+('KESFISIK0032', 6302, 160, 0, 1, 0, 2),
+('KESFISIK0033', 6173, 178, 0, 1, 0, 2),
+('KESFISIK0034', 6181, 160, 0, 1, 0, 2),
+('KESFISIK0035', 6185, 165, 0, 1, 0, 2),
+('KESFISIK0036', 6219, 0, 0, 0, 0, 1),
+('KESFISIK0037', 6220, 0, 0, 0, 0, 1),
+('KESFISIK0038', 6223, 168, 0, 1, 0, 2),
+('KESFISIK0039', 6230, 162, 0, 1, 0, 2),
+('KESFISIK0040', 6231, 162, 0, 1, 0, 2),
+('KESFISIK0041', 6234, 0, 0, 0, 0, 1),
+('KESFISIK0042', 6236, 155, 0, 1, 0, 2),
+('KESFISIK0043', 6261, 163, 0, 1, 0, 2),
+('KESFISIK0044', 6275, 153, 0, 1, 0, 1),
+('KESFISIK0045', 6278, 170, 0, 1, 0, 2),
+('KESFISIK0046', 6290, 0, 0, 0, 0, 1),
+('KESFISIK0047', 6292, 155, 0, 1, 0, 1),
+('KESFISIK0048', 6300, 151, 0, 1, 0, 2),
+('KESFISIK0049', 6306, 146, 0, 1, 0, 1),
+('KESFISIK0050', 6309, 161, 0, 1, 0, 2),
+('KESFISIK0051', 6182, 168, 0, 1, 0, 2),
+('KESFISIK0052', 6190, 165, 0, 1, 0, 2),
+('KESFISIK0053', 6213, 161, 0, 1, 0, 2),
+('KESFISIK0054', 6239, 0, 0, 0, 0, 1),
+('KESFISIK0055', 6243, 145, 0, 1, 0, 1),
+('KESFISIK0056', 6263, 175, 0, 1, 0, 2),
+('KESFISIK0057', 6284, 150, 0, 1, 0, 2),
+('KESFISIK0058', 6304, 0, 0, 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -141,21 +312,21 @@ INSERT INTO `tbl_kesehatanfisik` (`id_kesehatanfisik`, `nis`, `tb`, `warna`, `la
 
 CREATE TABLE `tbl_kriteria` (
   `id_kriteria` varchar(15) NOT NULL,
-  `judul` varchar(50) NOT NULL
+  `nama_kriteria` varchar(50) NOT NULL,
+  `nilai_terbobot` int(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_kriteria`
 --
 
-INSERT INTO `tbl_kriteria` (`id_kriteria`, `judul`) VALUES
-('KRITERIA01', 'Penjurusan'),
-('KRITERIA02', 'Grafik Remedial'),
-('KRITERIA03', 'Peringkat Rapor Jurusan'),
-('KRITERIA04', 'Kehadiran'),
-('KRITERIA05', 'Kepribadian'),
-('KRITERIA06', 'Kesehatan & Fisik'),
-('KRITERIA07', 'Wawancara');
+INSERT INTO `tbl_kriteria` (`id_kriteria`, `nama_kriteria`, `nilai_terbobot`) VALUES
+('KRITERIA01', 'Grafik Remedial', 15),
+('KRITERIA02', 'Peringkat Rapor Jurusan', 15),
+('KRITERIA03', 'Kehadiran', 20),
+('KRITERIA04', 'Kepribadian', 10),
+('KRITERIA05', 'Kesehatan & Fisik', 20),
+('KRITERIA06', 'Wawancara', 20);
 
 -- --------------------------------------------------------
 
@@ -178,7 +349,140 @@ CREATE TABLE `tbl_nilairemedial` (
 --
 
 INSERT INTO `tbl_nilairemedial` (`id_nilairemedial`, `nis`, `sem_1`, `sem_2`, `sem_3`, `sem_4`, `status_remedial`) VALUES
-('REMEDIAL0001', 6175, 2, 3, 2, 0, 2);
+('REMEDIAL0001', 6175, 2, 3, 2, 0, 2),
+('REMEDIAL0002', 6179, 8, 5, 7, 8, 2),
+('REMEDIAL0003', 6187, 1, 0, 1, 1, 2),
+('REMEDIAL0004', 6214, 5, 2, 1, 2, 2),
+('REMEDIAL0005', 6221, 1, 2, 0, 0, 2),
+('REMEDIAL0006', 6232, 0, 1, 0, 0, 2),
+('REMEDIAL0007', 6240, 3, 2, 2, 1, 2),
+('REMEDIAL0008', 6244, 2, 1, 0, 0, 2),
+('REMEDIAL0009', 6248, 5, 4, 3, 2, 2),
+('REMEDIAL0010', 6251, 0, 0, 0, 0, 2),
+('REMEDIAL0011', 6257, 6, 4, 4, 4, 2),
+('REMEDIAL0012', 6273, 11, 10, 8, 4, 2),
+('REMEDIAL0013', 6279, 2, 0, 0, 0, 2),
+('REMEDIAL0014', 6287, 7, 5, 4, 3, 2),
+('REMEDIAL0015', 6288, 5, 6, 6, 4, 2),
+('REMEDIAL0016', 6294, 4, 3, 3, 5, 2),
+('REMEDIAL0017', 6176, 4, 2, 3, 1, 2),
+('REMEDIAL0018', 6177, 1, 0, 0, 0, 2),
+('REMEDIAL0019', 6192, 7, 5, 4, 3, 2),
+('REMEDIAL0020', 6210, 5, 5, 5, 4, 2),
+('REMEDIAL0021', 6211, 3, 1, 2, 1, 2),
+('REMEDIAL0022', 6226, 3, 0, 1, 1, 2),
+('REMEDIAL0023', 6235, 4, 3, 3, 2, 2),
+('REMEDIAL0024', 6245, 5, 6, 6, 2, 2),
+('REMEDIAL0025', 6253, 5, 3, 2, 3, 2),
+('REMEDIAL0026', 6255, 0, 0, 0, 0, 2),
+('REMEDIAL0027', 6258, 6, 5, 5, 2, 2),
+('REMEDIAL0028', 6268, 2, 0, 0, 0, 2),
+('REMEDIAL0029', 6274, 5, 1, 1, 1, 2),
+('REMEDIAL0030', 6281, 4, 2, 1, 1, 2),
+('REMEDIAL0031', 6289, 0, 0, 0, 0, 2),
+('REMEDIAL0032', 6302, 1, 3, 0, 1, 2),
+('REMEDIAL0033', 6173, 8, 5, 3, 2, 2),
+('REMEDIAL0034', 6181, 7, 3, 1, 1, 2),
+('REMEDIAL0035', 6185, 5, 5, 1, 3, 2),
+('REMEDIAL0036', 6219, 1, 6, 2, 3, 2),
+('REMEDIAL0037', 6220, 8, 4, 5, 5, 2),
+('REMEDIAL0038', 6223, 2, 3, 0, 1, 2),
+('REMEDIAL0039', 6230, 7, 3, 2, 4, 2),
+('REMEDIAL0040', 6231, 0, 0, 0, 0, 2),
+('REMEDIAL0041', 6234, 12, 11, 8, 6, 2),
+('REMEDIAL0042', 6236, 6, 5, 2, 2, 2),
+('REMEDIAL0043', 6261, 3, 5, 1, 0, 2),
+('REMEDIAL0044', 6275, 5, 6, 3, 1, 2),
+('REMEDIAL0045', 6278, 14, 8, 9, 6, 2),
+('REMEDIAL0046', 6290, 5, 5, 4, 5, 2),
+('REMEDIAL0047', 6292, 0, 0, 0, 0, 2),
+('REMEDIAL0048', 6300, 3, 2, 1, 0, 2),
+('REMEDIAL0049', 6306, 1, 0, 0, 0, 2),
+('REMEDIAL0050', 6309, 2, 0, 0, 0, 2),
+('REMEDIAL0051', 6182, 5, 3, 1, 3, 2),
+('REMEDIAL0052', 6190, 4, 1, 5, 2, 2),
+('REMEDIAL0053', 6213, 7, 8, 4, 4, 2),
+('REMEDIAL0054', 6239, 3, 4, 4, 5, 1),
+('REMEDIAL0055', 6243, 7, 5, 1, 3, 2),
+('REMEDIAL0056', 6263, 2, 1, 2, 0, 2),
+('REMEDIAL0057', 6284, 1, 1, 0, 1, 2),
+('REMEDIAL0058', 6304, 2, 3, 3, 2, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_ranking`
+--
+
+CREATE TABLE `tbl_ranking` (
+  `id_ranking` int(3) NOT NULL,
+  `nis` int(4) NOT NULL,
+  `nilai_ranking` decimal(5,4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbl_ranking`
+--
+
+INSERT INTO `tbl_ranking` (`id_ranking`, `nis`, `nilai_ranking`) VALUES
+(1, 6173, '0.4938'),
+(2, 6175, '0.7741'),
+(3, 6176, '1.0000'),
+(4, 6177, '1.0000'),
+(5, 6179, '0.4029'),
+(6, 6181, '0.7741'),
+(7, 6182, '0.6978'),
+(8, 6185, '0.6978'),
+(9, 6187, '0.8715'),
+(10, 6190, '0.6978'),
+(11, 6192, '0.5315'),
+(12, 6210, '0.4606'),
+(13, 6211, '0.7205'),
+(14, 6213, '0.4555'),
+(15, 6214, '0.8715'),
+(16, 6219, '0.4876'),
+(17, 6220, '0.3745'),
+(18, 6221, '0.8715'),
+(19, 6223, '0.8715'),
+(20, 6226, '0.8715'),
+(21, 6230, '0.5753'),
+(22, 6231, '1.0000'),
+(23, 6232, '0.6174'),
+(24, 6234, '0.3199'),
+(25, 6235, '0.5604'),
+(26, 6236, '0.5753'),
+(27, 6239, '0.2241'),
+(28, 6240, '0.8715'),
+(29, 6243, '0.5604'),
+(30, 6244, '0.6174'),
+(31, 6245, '0.4876'),
+(32, 6248, '0.6416'),
+(33, 6251, '1.0000'),
+(34, 6253, '0.8715'),
+(35, 6255, '1.0000'),
+(36, 6257, '0.4288'),
+(37, 6258, '0.7741'),
+(38, 6261, '0.7643'),
+(39, 6263, '0.6793'),
+(40, 6268, '0.7321'),
+(41, 6273, '0.3199'),
+(42, 6274, '1.0000'),
+(43, 6275, '0.5269'),
+(44, 6278, '0.4288'),
+(45, 6279, '1.0000'),
+(46, 6281, '0.4793'),
+(47, 6284, '0.6793'),
+(48, 6287, '0.5753'),
+(49, 6288, '0.4596'),
+(50, 6289, '1.0000'),
+(51, 6290, '0.4876'),
+(52, 6292, '0.7205'),
+(53, 6294, '0.4876'),
+(54, 6300, '0.7062'),
+(55, 6302, '1.0000'),
+(56, 6304, '0.3053'),
+(57, 6306, '0.6174'),
+(58, 6309, '0.8715');
 
 -- --------------------------------------------------------
 
@@ -198,7 +502,64 @@ CREATE TABLE `tbl_rapor` (
 --
 
 INSERT INTO `tbl_rapor` (`id_rapor`, `nis`, `peringkat_jurusan`, `status_rapor`) VALUES
-('RAPOR0001', 6175, 43, 3);
+('RAPOR0001', 6175, 42, 3),
+('RAPOR0002', 6179, 125, 1),
+('RAPOR0003', 6187, 23, 4),
+('RAPOR0004', 6214, 29, 4),
+('RAPOR0005', 6221, 8, 4),
+('RAPOR0006', 6232, 4, 4),
+('RAPOR0007', 6240, 22, 4),
+('RAPOR0008', 6244, 9, 4),
+('RAPOR0009', 6248, 87, 2),
+('RAPOR0010', 6251, 1, 4),
+('RAPOR0011', 6257, 114, 1),
+('RAPOR0012', 6273, 123, 1),
+('RAPOR0013', 6279, 3, 4),
+('RAPOR0014', 6287, 68, 3),
+('RAPOR0015', 6288, 89, 2),
+('RAPOR0016', 6294, 65, 3),
+('RAPOR0017', 6176, 25, 4),
+('RAPOR0018', 6177, 5, 4),
+('RAPOR0019', 6192, 46, 3),
+('RAPOR0020', 6210, 62, 3),
+('RAPOR0021', 6211, 19, 4),
+('RAPOR0022', 6226, 24, 4),
+('RAPOR0023', 6235, 36, 3),
+('RAPOR0024', 6245, 54, 3),
+('RAPOR0025', 6253, 30, 4),
+('RAPOR0026', 6255, 11, 4),
+('RAPOR0027', 6258, 45, 3),
+('RAPOR0028', 6268, 10, 4),
+('RAPOR0029', 6274, 16, 4),
+('RAPOR0030', 6281, 35, 1),
+('RAPOR0031', 6289, 2, 4),
+('RAPOR0032', 6302, 14, 4),
+('RAPOR0033', 6173, 86, 2),
+('RAPOR0034', 6181, 43, 3),
+('RAPOR0035', 6185, 61, 3),
+('RAPOR0036', 6219, 56, 3),
+('RAPOR0037', 6220, 92, 2),
+('RAPOR0038', 6223, 18, 4),
+('RAPOR0039', 6230, 57, 3),
+('RAPOR0040', 6231, 17, 4),
+('RAPOR0041', 6234, 120, 1),
+('RAPOR0042', 6236, 63, 3),
+('RAPOR0043', 6261, 34, 4),
+('RAPOR0044', 6275, 64, 3),
+('RAPOR0045', 6278, 128, 1),
+('RAPOR0046', 6290, 69, 3),
+('RAPOR0047', 6292, 7, 4),
+('RAPOR0048', 6300, 27, 4),
+('RAPOR0049', 6306, 12, 4),
+('RAPOR0050', 6309, 6, 4),
+('RAPOR0051', 6182, 58, 3),
+('RAPOR0052', 6190, 67, 3),
+('RAPOR0053', 6213, 96, 2),
+('RAPOR0054', 6239, 98, 2),
+('RAPOR0055', 6243, 51, 3),
+('RAPOR0056', 6263, 20, 4),
+('RAPOR0057', 6284, 32, 4),
+('RAPOR0058', 6304, 74, 2);
 
 -- --------------------------------------------------------
 
@@ -305,7 +666,7 @@ INSERT INTO `tbl_siswa` (`nis`, `id_guru`, `id_jurusan`, `nama_siswa`, `jenis_ke
 (6248, 1, 2, 'Maulana Sheva Fahrezi', 'L', 'islam', 'Malang', '2001-02-18', 'Hadi Prianto', 'Jl. Nusa Indah 07 Rt. 19 Rw. 03 Karangkates Sumberpucung Malang'),
 (6249, 1, 1, 'Mayang Mahmudah', 'P', 'islam', 'Malang', '2002-04-17', 'Turiman', 'Jl. Cendrawasih 1 Rt. 19 Rw. 06 Senggreng Sumberpucung Malang'),
 (6250, 5, 1, 'Mespin Andayani', 'P', 'islam', 'Blitar', '2001-03-01', 'Sugimin', 'Rt. 01 Rw. 02 Dawung Olak-alen Selorejo Blitar'),
-(6251, 1, 2, 'Mirella Caesatama Berliana', 'L', 'islam', 'Blitar', '2002-03-23', 'Kusnadi', 'Rt. 01 Rw. 04 Sembung Pagergunung Kesamben Blitar'),
+(6251, 1, 2, 'Mirella Caesatama Berliana', 'P', 'islam', 'Blitar', '2002-03-23', 'Kusnadi', 'Rt. 01 Rw. 04 Sembung Pagergunung Kesamben Blitar'),
 (6252, 5, 1, 'Mita Patrisia', 'P', 'islam', 'Malang', '2001-10-10', 'Juki', 'Rt. 56 Rw. 05 Duren Arjowilangun Kalipare Malang'),
 (6253, 2, 2, 'Mochamad Yusuf Nurohman', 'L', 'islam', 'Malang', '2001-05-21', 'Suwardi', 'Jl. Pandan 08 Rt. 20 Rw. 03 Karangkates Sumberpucung Malang'),
 (6254, 2, 1, 'Mochammad Nafa\' Chalimi', 'L', 'Islam', 'Malang', '2002-02-03', 'M. Nurul Huda', 'Jl. Kaliasem Rt. 07 Rw. 02 Kalipare Malang'),
@@ -403,7 +764,64 @@ CREATE TABLE `tbl_wawancara` (
 --
 
 INSERT INTO `tbl_wawancara` (`id_wawancara`, `nis`, `nilai`, `status_wawancara`) VALUES
-('WAWANCARA0001', 6175, 1, 2);
+('WAWANCARA0001', 6175, 1, 2),
+('WAWANCARA0002', 6179, 0, 1),
+('WAWANCARA0003', 6187, 1, 2),
+('WAWANCARA0004', 6214, 1, 2),
+('WAWANCARA0005', 6221, 1, 2),
+('WAWANCARA0006', 6232, 0, 1),
+('WAWANCARA0007', 6240, 1, 2),
+('WAWANCARA0008', 6244, 0, 1),
+('WAWANCARA0009', 6248, 1, 2),
+('WAWANCARA0010', 6251, 1, 2),
+('WAWANCARA0011', 6257, 0, 1),
+('WAWANCARA0012', 6273, 0, 1),
+('WAWANCARA0013', 6279, 1, 2),
+('WAWANCARA0014', 6287, 0, 1),
+('WAWANCARA0015', 6288, 0, 1),
+('WAWANCARA0016', 6294, 0, 1),
+('WAWANCARA0017', 6176, 1, 2),
+('WAWANCARA0018', 6177, 1, 2),
+('WAWANCARA0019', 6192, 0, 1),
+('WAWANCARA0020', 6210, 0, 1),
+('WAWANCARA0021', 6211, 1, 2),
+('WAWANCARA0022', 6226, 1, 2),
+('WAWANCARA0023', 6235, 0, 1),
+('WAWANCARA0024', 6245, 0, 1),
+('WAWANCARA0025', 6253, 1, 2),
+('WAWANCARA0026', 6255, 1, 2),
+('WAWANCARA0027', 6258, 1, 2),
+('WAWANCARA0028', 6268, 1, 2),
+('WAWANCARA0029', 6274, 1, 2),
+('WAWANCARA0030', 6281, 1, 2),
+('WAWANCARA0031', 6289, 1, 2),
+('WAWANCARA0032', 6302, 1, 2),
+('WAWANCARA0033', 6173, 0, 1),
+('WAWANCARA0034', 6181, 1, 2),
+('WAWANCARA0035', 6185, 1, 2),
+('WAWANCARA0036', 6219, 0, 1),
+('WAWANCARA0037', 6220, 0, 1),
+('WAWANCARA0038', 6223, 1, 2),
+('WAWANCARA0039', 6230, 0, 1),
+('WAWANCARA0040', 6231, 1, 2),
+('WAWANCARA0041', 6234, 0, 1),
+('WAWANCARA0042', 6236, 0, 1),
+('WAWANCARA0043', 6261, 1, 2),
+('WAWANCARA0044', 6275, 0, 1),
+('WAWANCARA0045', 6278, 0, 1),
+('WAWANCARA0046', 6290, 0, 1),
+('WAWANCARA0047', 6292, 1, 2),
+('WAWANCARA0048', 6300, 0, 1),
+('WAWANCARA0049', 6306, 0, 1),
+('WAWANCARA0050', 6309, 1, 2),
+('WAWANCARA0051', 6182, 1, 2),
+('WAWANCARA0052', 6190, 1, 2),
+('WAWANCARA0053', 6213, 0, 1),
+('WAWANCARA0054', 6239, 0, 1),
+('WAWANCARA0055', 6243, 0, 1),
+('WAWANCARA0056', 6263, 0, 1),
+('WAWANCARA0057', 6284, 0, 1),
+('WAWANCARA0058', 6304, 0, 1);
 
 --
 -- Indexes for dumped tables
@@ -454,6 +872,12 @@ ALTER TABLE `tbl_kriteria`
 ALTER TABLE `tbl_nilairemedial`
   ADD PRIMARY KEY (`id_nilairemedial`),
   ADD KEY `nis` (`nis`);
+
+--
+-- Indexes for table `tbl_ranking`
+--
+ALTER TABLE `tbl_ranking`
+  ADD PRIMARY KEY (`id_ranking`);
 
 --
 -- Indexes for table `tbl_rapor`

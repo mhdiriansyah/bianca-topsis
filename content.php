@@ -21,6 +21,14 @@ elseif ($page == "logout")              include("page/logout.php");
     elseif ($page == "gurueditpro")                  include("page/guru/gurueditpro.php");
     elseif ($page == "guruhapus")                    include("page/guru/guruhapus.php");
 
+    // -------------------------- kriteria --------------------------
+    elseif ($page == "kriteria")                     include("page/kriteria/kriteria.php");
+    elseif ($page == "kriteriatambah")               include("page/kriteria/kriteriatambah.php");
+    elseif ($page == "kriteriatambahpro")            include("page/kriteria/kriteriatambahpro.php");
+    elseif ($page == "kriteriaedit")                 include("page/kriteria/kriteriaedit.php");
+    elseif ($page == "kriteriaeditpro")              include("page/kriteria/kriteriaeditpro.php");
+    elseif ($page == "kriteriahapus")                include("page/kriteria/kriteriahapus.php");
+
     // -------------------------- jurusan --------------------------
     elseif ($page == "jurusan")                      include("page/jurusan/jurusan.php");
     elseif ($page == "jurusantambah")                include("page/jurusan/jurusantambah.php");
@@ -67,6 +75,9 @@ elseif ($page == "logout")              include("page/logout.php");
     elseif ($page == "wawancaraedit")                include("page/proses/wawancara/wawancaraedit.php");
     elseif ($page == "wawancaraeditpro")             include("page/proses/wawancara/wawancaraeditpro.php");
     elseif ($page == "wawancarahapus")               include("page/proses/wawancara/wawancarahapus.php");
+
+    // -------------------------- metode --------------------------
+    elseif ($page == "metode")                       include("page/metode/metode.php");
 
 
 

@@ -35,7 +35,7 @@
 							<form action="login.php" method="post" enctype="multipart/form-data">
 								<div class="form-group">
 									<label for="signin-email" class="control-label sr-only">Email</label>
-									<input type="text" name="username" class="form-control" placeholder="username/nim">
+									<input type="text" name="username" class="form-control" placeholder="username">
 								</div>
 								<div class="form-group">
 									<label for="signin-password" class="control-label sr-only">Password</label>

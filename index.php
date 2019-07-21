@@ -29,6 +29,18 @@
 		.btn {
 			outline: none !important;
 		}
+		.positif {
+			background-color: #5cb85c;
+			color: #f2f2f2;
+		}
+		.negatif {
+			background-color: #d9534f;
+			color: #f2f2f2;
+		}
+		.pembagi {
+			background-color: #f0ad4e;
+			color: #f2f2f2;
+		}
 	</style>
 </head>
 

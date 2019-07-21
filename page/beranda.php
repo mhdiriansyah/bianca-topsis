@@ -58,6 +58,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Proses Kriteria</th>
+                                <th>Nilai Terbobot</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -67,7 +68,8 @@
                             while($data=mysqli_fetch_array($q)){ ?>
                                 <tr>
                                     <td><?= $no ?></td>
-                                    <td><span class="label label-primary"><?= $data['judul'] ?></span></td>
+                                    <td><span class="label label-primary"><?= $data['nama_kriteria'] ?></span></td>
+                                    <td><?= $data['nilai_terbobot'] ?> %</td>
                                 </tr>
                             <?php $no++; } ?>
                         </tbody>

@@ -78,6 +78,7 @@ elseif ($page == "logout")              include("page/logout.php");
 
     // -------------------------- metode --------------------------
     elseif ($page == "metode")                       include("page/metode/metode.php");
+    elseif ($page == "hasil")                        include("page/metode/hasil.php");
 
 
 

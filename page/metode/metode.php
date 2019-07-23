@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="pull-left">
-                    <h3 class="panel-title">Proses Metode Topsis</h3>
+                    <h3 class="panel-title">Proses Perhitungan Metode Topsis</h3>
                     <p class="panel-subtitle"></p>
                 </div>
             </div>

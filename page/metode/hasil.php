@@ -13,7 +13,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="alert alert-info alert-dismissible" role="alert">
-                    <i class="fa fa-info-circle"></i> Data ini adalah hasil dari perhitungan Topsis dari kriteria yang telah ditentukan. Setelah proses dilewati diambil 30 Besar Siswa yang masuk dalam
+                    <i class="fa fa-info-circle"></i> Data ini adalah hasil dari perhitungan Topsis dan kriteria yang telah ditentukan. Setelah proses dilewati diambil 30 Besar Siswa yang masuk dalam
                     PJB Class.
                 </div>
                 <div class="table-responsive">

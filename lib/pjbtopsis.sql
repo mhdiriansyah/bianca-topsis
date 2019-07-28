@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 22, 2019 at 10:19 PM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.10
+-- Host: localhost
+-- Generation Time: Jul 28, 2019 at 06:08 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.3.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -736,15 +736,17 @@ INSERT INTO `tbl_siswa` (`nis`, `id_guru`, `id_jurusan`, `nama_siswa`, `jenis_ke
 CREATE TABLE `tbl_user` (
   `id_user` int(11) NOT NULL,
   `username` varchar(10) NOT NULL,
-  `password` varchar(10) NOT NULL
+  `password` varchar(10) NOT NULL,
+  `role` int(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `tbl_user`
 --
 
-INSERT INTO `tbl_user` (`id_user`, `username`, `password`) VALUES
-(1, 'admin', 'admin');
+INSERT INTO `tbl_user` (`id_user`, `username`, `password`, `role`) VALUES
+(1, 'admin', 'admin', 1),
+(2, 'kajur', 'kajur', 2);
 
 -- --------------------------------------------------------
 
@@ -921,7 +923,7 @@ ALTER TABLE `tbl_guru`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables

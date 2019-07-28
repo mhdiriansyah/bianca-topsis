@@ -1,6 +1,6 @@
 <?php 
 	session_start();
-	if (!empty($_SESSION['username']) && !empty($_SESSION['password'])){
+	if (!empty($_SESSION['username']) && !empty($_SESSION['password']) && !empty($_SESSION['role'])){
 		date_default_timezone_set('Asia/Jakarta');
 		include "lib/koneksi.php";
 ?>

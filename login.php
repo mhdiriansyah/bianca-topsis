@@ -59,6 +59,7 @@
 								url=index.php?page=beranda'>";
 								  $_SESSION['username']  = $data['username'];
 								  $_SESSION['password']  = $data['password'];
+								  $_SESSION['role']      = $data['role'];
 								}
 							  }
                             ?>

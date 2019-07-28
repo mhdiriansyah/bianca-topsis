@@ -24,6 +24,7 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane fade in active" id="tab-grafikremedial">
+                        <?php if ($auth['role'] == 1){ ?>
                         <div class="row">
                             <button id="btn-tambahgrafikremedial" class="btn btn-primary"><i class="fa fa-plus-circle"></i> tambah data</button>
                             <button id="btn-tutupgrafikremedial" class="btn btn-danger"><i class="fa fa-remove"></i> tutup</button>
@@ -65,6 +66,7 @@
                                 </form>
                             </div>
                         </div><br>
+                        <?php } ?>
                         <div class="row">
                             <div class="table-responsive">
                                 <table class="table table-bordered example">
@@ -75,7 +77,9 @@
                                             <th rowspan="2">Nis</th>
                                             <th colspan="4">Jumlah Remedial</th>
                                             <th rowspan="2">Status Remedial</th>
+                                            <?php if ($auth['role'] == 1){ ?>
                                             <th rowspan="2">Aksi</th>
+                                            <?php } ?>
                                         </tr>
                                         <tr>
                                             <th>Semester 1</th>
@@ -99,10 +103,12 @@
                                                 <td><?= $dataq['sem_3'] ?></td>
                                                 <td><?= $dataq['sem_4'] ?></td>
                                                 <td><?= getStatusRemedial($dataq['status_remedial']) ?></td>
+                                                <?php if ($auth['role'] == 1){ ?>
                                                 <td>
                                                     <a href="?page=grafikremedialedit&id=<?= $dataq['id_nilairemedial'] ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> edit</a>
                                                     <a href="?page=grafikremedialhapus&id=<?= $dataq['id_nilairemedial'] ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> hapus</a>
                                                 </td>
+                                                <?php } ?>
                                             </tr>
                                     <?php $noq++; } ?>
                                     </tbody>
@@ -111,6 +117,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tab-peringkatrapor">
+                        <?php if ($auth['role'] == 1){ ?>
                         <div class="row">
                             <button id="btn-tambahrapor" class="btn btn-primary"><i class="fa fa-plus-circle"></i> tambah data</button>
                             <button id="btn-tutuprapor" class="btn btn-danger"><i class="fa fa-remove"></i> tutup</button>
@@ -149,6 +156,7 @@
                                 </form>
                             </div>
                         </div><br>
+                        <?php } ?> 
                         <div class="row">
                             <div class="table-responsive">
                                 <table class="table table-bordered example">
@@ -159,7 +167,9 @@
                                             <th>Nis</th>
                                             <th>Peringkat Jurusan</th>
                                             <th>Status Rapor</th>
+                                            <?php if ($auth['role'] == 1){ ?>
                                             <th>Aksi</th>
+                                            <?php } ?> 
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -174,10 +184,12 @@
                                                 <td><span class="label label-primary"><?= $dataw['nis'].'</span> '.$dataw['nama_siswa'] ?></td>
                                                 <td><?= $dataw['peringkat_jurusan'] ?></td>
                                                 <td><?= getStatusRapor($dataw['status_rapor']) ?></td>
+                                                <?php if ($auth['role'] == 1){ ?>
                                                 <td>
                                                     <a href="?page=raporedit&id=<?= $dataw['id_rapor'] ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> edit</a>
                                                     <a href="?page=raporhapus&id=<?= $dataw['id_rapor'] ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> hapus</a>
                                                 </td>
+                                                <?php } ?>
                                             </tr>
                                     <?php $now++; } ?>
                                     </tbody>
@@ -186,6 +198,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tab-kehadiran">
+                        <?php if ($auth['role'] == 1){ ?>
                         <div class="row">
                             <button id="btn-tambahkehadiran" class="btn btn-primary"><i class="fa fa-plus-circle"></i> tambah data</button>
                             <button id="btn-tutupkehadiran" class="btn btn-danger"><i class="fa fa-remove"></i> tutup</button>
@@ -227,6 +240,7 @@
                                 </form>
                             </div>
                         </div><br>
+                        <?php } ?>
                         <div class="row">
                             <div class="table-responsive">
                                 <table class="table table-bordered example">
@@ -240,7 +254,9 @@
                                             <th>Alpa</th>
                                             <th>Terlambat</th>
                                             <th>Status Kehadiran</th>
+                                            <?php if ($auth['role'] == 1){ ?>
                                             <th>Aksi</th>
+                                            <?php } ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -258,10 +274,12 @@
                                                 <td><?= $datae['alpa'] ?></td>
                                                 <td><?= $datae['terlambat'] ?></td>
                                                 <td><?= getStatusRemedial($datae['status_kehadiran']) ?></td>
+                                                <?php if ($auth['role'] == 1){ ?>
                                                 <td>
                                                     <a href="?page=kehadiranedit&id=<?= $datae['id_kehadiran'] ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> edit</a>
                                                     <a href="?page=kehadiranhapus&id=<?= $datae['id_kehadiran'] ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> hapus</a>
                                                 </td>
+                                                <?php } ?>
                                             </tr>
                                     <?php $noe++; } ?>
                                     </tbody>
@@ -270,6 +288,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tab-kepribadian">
+                        <?php if ($auth['role'] == 1){ ?>
                         <div class="row">
                             <button id="btn-tambahkepribadian" class="btn btn-primary"><i class="fa fa-plus-circle"></i> tambah data</button>
                             <button id="btn-tutupkepribadian" class="btn btn-danger"><i class="fa fa-remove"></i> tutup</button>
@@ -311,6 +330,7 @@
                                 </form>
                             </div>
                         </div><br>
+                        <?php } ?>
                         <div class="row">
                             <div class="table-responsive">
                                 <table class="table table-bordered example">
@@ -321,7 +341,9 @@
                                             <th rowspan="2">Nis</th>
                                             <th colspan="5">Nilai</th>
                                             <th rowspan="2">Status Kepribadian</th>
+                                            <?php if ($auth['role'] == 1){ ?>
                                             <th rowspan="2">Aksi</th>
+                                            <?php } ?>
                                         </tr>
                                         <tr>
                                             <th>1</th>
@@ -347,10 +369,12 @@
                                                 <td><?= $datar['nilai_4'] ?></td>
                                                 <td><?= $datar['rata_rata'] ?></td>
                                                 <td><?= getStatusRapor($datar['status_kepribadian']) ?></td>
+                                                <?php if ($auth['role'] == 1){ ?>
                                                 <td>
                                                     <a href="?page=kepribadianedit&id=<?= $datar['id_kepribadian'] ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> edit</a>
                                                     <a href="?page=kepribadianhapus&id=<?= $datar['id_kepribadian'] ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> hapus</a>
                                                 </td>
+                                                <?php } ?>
                                             </tr>
                                     <?php $nor++; } ?>
                                     </tbody>
@@ -359,6 +383,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tab-kesehatanfisik">
+                        <?php if ($auth['role'] == 1){ ?>
                         <div class="row">
                             <button id="btn-tambahkesehatanfisik" class="btn btn-primary"><i class="fa fa-plus-circle"></i> tambah data</button>
                             <button id="btn-tutupkesehatanfisik" class="btn btn-danger"><i class="fa fa-remove"></i> tutup</button>
@@ -400,6 +425,7 @@
                                 </form>
                             </div>
                         </div><br>
+                        <?php } ?>
                         <div class="row">
                             <div class="table-responsive">
                                 <table class="table table-bordered example">
@@ -413,7 +439,9 @@
                                             <th>Lari</th>
                                             <th>THT</th>
                                             <th>Status Fisik & Kesehatan</th>
+                                            <?php if ($auth['role'] == 1){ ?>
                                             <th>Aksi</th>
+                                            <?php } ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -431,10 +459,12 @@
                                                 <td><?= $datat['lari'] ?></td>
                                                 <td><?= $datat['tht'] ?></td>
                                                 <td><?= getStatusRemedial($datat['status_kesehatanfisik']) ?></td>
+                                                <?php if ($auth['role'] == 1){ ?>
                                                 <td>
                                                     <a href="?page=kesehatanfisikedit&id=<?= $datat['id_kesehatanfisik'] ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> edit</a>
                                                     <a href="?page=kesehatanfisikhapus&id=<?= $datat['id_kesehatanfisik'] ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> hapus</a>
                                                 </td>
+                                                <?php } ?>
                                             </tr>
                                     <?php $not++; } ?>
                                     </tbody>
@@ -443,6 +473,7 @@
                         </div>
                     </div>
                     <div class="tab-pane" id="tab-wawancara">
+                        <?php if ($auth['role'] == 1){ ?>
                         <div class="row">
                             <button id="btn-tambahwawancara" class="btn btn-primary"><i class="fa fa-plus-circle"></i> tambah data</button>
                             <button id="btn-tutupwawancara" class="btn btn-danger"><i class="fa fa-remove"></i> tutup</button>
@@ -484,6 +515,7 @@
                                 </form>
                             </div>
                         </div><br>
+                        <?php } ?>
                         <div class="row">
                             <div class="table-responsive">
                                 <table class="table table-bordered example">
@@ -494,7 +526,9 @@
                                             <th>Nis</th>
                                             <th>Nilai</th>
                                             <th>Status Wawancara</th>
+                                            <?php if ($auth['role'] == 1){ ?>
                                             <th>Aksi</th>
+                                            <?php } ?>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -509,10 +543,12 @@
                                                 <td><span class="label label-primary"><?= $datay['nis'].'</span> '.$datay['nama_siswa'] ?></td>
                                                 <td><?= $datay['nilai'] ?></td>
                                                 <td><?= getStatusRemedial($datay['status_wawancara']) ?></td>
+                                                <?php if ($auth['role'] == 1){ ?>
                                                 <td>
                                                     <a href="?page=wawancaraedit&id=<?= $datay['id_wawancara'] ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> edit</a>
                                                     <a href="?page=wawancarahapus&id=<?= $datay['id_wawancara'] ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> hapus</a>
                                                 </td>
+                                                <?php } ?>
                                             </tr>
                                     <?php $noy++; } ?>
                                     </tbody>

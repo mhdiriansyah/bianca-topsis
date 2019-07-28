@@ -6,9 +6,11 @@
                     <h3 class="panel-title">Manajemen Data Siswa</h3>
                     <p class="panel-subtitle"></p>
                 </div>
+                <?php if ($auth['role'] == 1){ ?>
                 <div class="pull-right">
                     <a href="?page=siswatambah" class="btn btn-primary"><i class="fa fa-plus-circle"></i> tambah data</a>
                 </div>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -31,7 +33,9 @@
                                 <th>Tanggal Lahir</th>
                                 <th>Nama Orang Tua</th>
                                 <th>Alamat</th>
+                                <?php if ($auth['role'] == 1){ ?>
                                 <th>Aksi</th>
+                                <?php } ?>
                             </tr>
                         </thead>
                         <tbody>
@@ -54,10 +58,12 @@
                                     <td><?= $data['tgl_lahir'] ?></td>
                                     <td><?= $data['nama_orang_tua'] ?></td>
                                     <td><?= $data['alamat'] ?></td>
+                                    <?php if ($auth['role'] == 1){ ?>
                                     <td>
                                         <a href="?page=siswaedit&id=<?= $data['nis'] ?>" class="btn btn-primary btn-xs"><i class="fa fa-edit"></i> edit</a>
                                         <a href="?page=siswahapus&id=<?= $data['nis'] ?>" class="btn btn-danger btn-xs"><i class="fa fa-trash"></i> hapus</a>
                                     </td>
+                                    <?php } ?> 
                                 </tr>
                             <?php $no++; } ?>
                         </tbody>

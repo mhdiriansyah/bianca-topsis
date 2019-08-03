@@ -37,13 +37,15 @@
                                                 <input type="hidden" name="idremedial" value="<?= idRemedial() ?>">
                                                 <select name="nis" class="form-control">
                                                 <option style="display:none;">-- pilih salah satu --</option>
-                                                <?php 
-                                                    $q = mysqli_query($conn, "SELECT * FROM tbl_siswa WHERE id_jurusan=2");
+                                                <?php
+                                                    $q = mysqli_query($conn, "SELECT tbl_siswa.nis as Nis, tbl_siswa.nama_siswa as Nama FROM tbl_siswa
+                                                                            LEFT OUTER JOIN tbl_nilairemedial ON tbl_siswa.nis=tbl_nilairemedial.nis
+                                                                            WHERE tbl_siswa.id_jurusan=2 AND tbl_nilairemedial.nis IS NULL");
                                                     while($dataq = mysqli_fetch_array($q)){
-                                                        echo "<option value=$dataq[nis]>($dataq[nis]) $dataq[nama_siswa]</option>";
+                                                        echo "<option value=$dataq[Nis]>($dataq[Nis]) $dataq[Nama]</option>";
                                                     }
                                                 ?>
-                                            </select>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -75,6 +77,7 @@
                                             <th rowspan="2">No</th>
                                             <th rowspan="2">Id Nilai Remedial</th>
                                             <th rowspan="2">Nis</th>
+                                            <th rowspan="2">Nama Lengkap Siswa</th>
                                             <th colspan="4">Jumlah Remedial</th>
                                             <th rowspan="2">Status Remedial</th>
                                             <?php if ($auth['role'] == 1){ ?>
@@ -97,7 +100,8 @@
                                             <tr>
                                                 <td><?= $noq ?></td>
                                                 <td><span class="label label-success"><?= $dataq['id_nilairemedial'] ?></span></td>
-                                                <td><span class="label label-primary"><?= $dataq['nis'].'</span> '.$dataq['nama_siswa'] ?></td>
+                                                <td><span class="label label-primary"><?= $dataq['nis'] ?></span></td>
+                                                <td><?= $dataq['nama_siswa'] ?></td>
                                                 <td><?= $dataq['sem_1'] ?></td>
                                                 <td><?= $dataq['sem_2'] ?></td>
                                                 <td><?= $dataq['sem_3'] ?></td>
@@ -131,9 +135,11 @@
                                                 <select name="nis" class="form-control">
                                                 <option style="display:none;">-- pilih salah satu --</option>
                                                 <?php 
-                                                    $w = mysqli_query($conn, "SELECT * FROM tbl_siswa WHERE id_jurusan=2");
+                                                    $w = mysqli_query($conn, "SELECT tbl_siswa.nis as Nis, tbl_siswa.nama_siswa as Nama FROM tbl_siswa
+                                                                            LEFT OUTER JOIN tbl_rapor ON tbl_siswa.nis=tbl_rapor.nis
+                                                                            WHERE tbl_siswa.id_jurusan=2 AND tbl_rapor.nis IS NULL");
                                                     while($dataw = mysqli_fetch_array($w)){
-                                                        echo "<option value=$dataw[nis]>($dataw[nis]) $dataw[nama_siswa]</option>";
+                                                        echo "<option value=$dataw[Nis]>($dataw[Nis]) $dataw[Nama]</option>";
                                                     }
                                                 ?>
                                             </select>
@@ -165,6 +171,7 @@
                                             <th>No</th>
                                             <th>Id Rapor</th>
                                             <th>Nis</th>
+                                            <th>Nama Lengkap Siswa</th>
                                             <th>Peringkat Jurusan</th>
                                             <th>Status Rapor</th>
                                             <?php if ($auth['role'] == 1){ ?>
@@ -181,7 +188,8 @@
                                             <tr>
                                                 <td><?= $now ?></td>
                                                 <td><span class="label label-success"><?= $dataw['id_rapor'] ?></span></td>
-                                                <td><span class="label label-primary"><?= $dataw['nis'].'</span> '.$dataw['nama_siswa'] ?></td>
+                                                <td><span class="label label-primary"><?= $dataw['nis'] ?></span></td>
+                                                <td><?= $dataw['nama_siswa'] ?></td>
                                                 <td><?= $dataw['peringkat_jurusan'] ?></td>
                                                 <td><?= getStatusRapor($dataw['status_rapor']) ?></td>
                                                 <?php if ($auth['role'] == 1){ ?>
@@ -212,9 +220,11 @@
                                                 <select name="nis" class="form-control">
                                                 <option style="display:none;">-- pilih salah satu --</option>
                                                 <?php 
-                                                    $w = mysqli_query($conn, "SELECT * FROM tbl_siswa WHERE id_jurusan=2");
+                                                    $w = mysqli_query($conn, "SELECT tbl_siswa.nis as Nis, tbl_siswa.nama_siswa as Nama FROM tbl_siswa
+                                                                            LEFT OUTER JOIN tbl_kehadiran ON tbl_siswa.nis=tbl_kehadiran.nis
+                                                                            WHERE tbl_siswa.id_jurusan=2 AND tbl_kehadiran.nis IS NULL");
                                                     while($dataw = mysqli_fetch_array($w)){
-                                                        echo "<option value=$dataw[nis]>($dataw[nis]) $dataw[nama_siswa]</option>";
+                                                        echo "<option value=$dataw[Nis]>($dataw[Nis]) $dataw[Nama]</option>";
                                                     }
                                                 ?>
                                             </select>
@@ -249,6 +259,7 @@
                                             <th>No</th>
                                             <th>Id Kehadiran</th>
                                             <th>Nis</th>
+                                            <th>Nama Lengkap Siswa</th>
                                             <th>Sakit</th>
                                             <th>Ijin</th>
                                             <th>Alpa</th>
@@ -268,7 +279,8 @@
                                             <tr>
                                                 <td><?= $noe ?></td>
                                                 <td><span class="label label-success"><?= $datae['id_kehadiran'] ?></span></td>
-                                                <td><span class="label label-primary"><?= $datae['nis'].'</span> '.$datae['nama_siswa'] ?></td>
+                                                <td><span class="label label-primary"><?= $datae['nis'] ?></span></td>
+                                                <td><?= $datae['nama_siswa'] ?></td>
                                                 <td><?= $datae['sakit'] ?></td>
                                                 <td><?= $datae['ijin'] ?></td>
                                                 <td><?= $datae['alpa'] ?></td>
@@ -302,9 +314,11 @@
                                                 <select name="nis" class="form-control">
                                                 <option style="display:none;">-- pilih salah satu --</option>
                                                 <?php 
-                                                    $w = mysqli_query($conn, "SELECT * FROM tbl_siswa WHERE id_jurusan=2");
+                                                    $w = mysqli_query($conn, "SELECT tbl_siswa.nis as Nis, tbl_siswa.nama_siswa as Nama FROM tbl_siswa
+                                                                            LEFT OUTER JOIN tbl_kepribadian ON tbl_siswa.nis=tbl_kepribadian.nis
+                                                                            WHERE tbl_siswa.id_jurusan=2 AND tbl_kepribadian.nis IS NULL");
                                                     while($dataw = mysqli_fetch_array($w)){
-                                                        echo "<option value=$dataw[nis]>($dataw[nis]) $dataw[nama_siswa]</option>";
+                                                        echo "<option value=$dataw[Nis]>($dataw[Nis]) $dataw[Nama]</option>";
                                                     }
                                                 ?>
                                             </select>
@@ -339,6 +353,7 @@
                                             <th rowspan="2">No</th>
                                             <th rowspan="2">Id Kepribadian</th>
                                             <th rowspan="2">Nis</th>
+                                            <th rowspan="2">Nama Lengkap Siswa</th>
                                             <th colspan="5">Nilai</th>
                                             <th rowspan="2">Status Kepribadian</th>
                                             <?php if ($auth['role'] == 1){ ?>
@@ -362,7 +377,8 @@
                                             <tr>
                                                 <td><?= $nor ?></td>
                                                 <td><span class="label label-success"><?= $datar['id_kepribadian'] ?></span></td>
-                                                <td><span class="label label-primary"><?= $datar['nis'].'</span> '.$datar['nama_siswa'] ?></td>
+                                                <td><span class="label label-primary"><?= $datar['nis'] ?></span></td>
+                                                <td><?= $datar['nama_siswa'] ?></td>
                                                 <td><?= $datar['nilai_1'] ?></td>
                                                 <td><?= $datar['nilai_2'] ?></td>
                                                 <td><?= $datar['nilai_3'] ?></td>
@@ -397,9 +413,11 @@
                                                 <select name="nis" class="form-control">
                                                 <option style="display:none;">-- pilih salah satu --</option>
                                                 <?php 
-                                                    $w = mysqli_query($conn, "SELECT * FROM tbl_siswa WHERE id_jurusan=2");
+                                                    $w = mysqli_query($conn, "SELECT tbl_siswa.nis as Nis, tbl_siswa.nama_siswa as Nama FROM tbl_siswa
+                                                                            LEFT OUTER JOIN tbl_kesehatanfisik ON tbl_siswa.nis=tbl_kesehatanfisik.nis
+                                                                            WHERE tbl_siswa.id_jurusan=2 AND tbl_kesehatanfisik.nis IS NULL");
                                                     while($dataw = mysqli_fetch_array($w)){
-                                                        echo "<option value=$dataw[nis]>($dataw[nis]) $dataw[nama_siswa]</option>";
+                                                        echo "<option value=$dataw[Nis]>($dataw[Nis]) $dataw[Nama]</option>";
                                                     }
                                                 ?>
                                             </select>
@@ -434,6 +452,7 @@
                                             <th>No</th>
                                             <th>Id Kesehatan Fisik</th>
                                             <th>Nis</th>
+                                            <th>Nama Lengkap Siswa</th>
                                             <th>Tinggi Badan</th>
                                             <th>Warna</th>
                                             <th>Lari</th>
@@ -453,7 +472,8 @@
                                             <tr>
                                                 <td><?= $not ?></td>
                                                 <td><span class="label label-success"><?= $datat['id_kesehatanfisik'] ?></span></td>
-                                                <td><span class="label label-primary"><?= $datat['nis'].'</span> '.$datat['nama_siswa'] ?></td>
+                                                <td><span class="label label-primary"><?= $datat['nis'] ?></span></td>
+                                                <td><?= $datat['nama_siswa'] ?></td>
                                                 <td><?= $datat['tb'] ?></td>
                                                 <td><?= $datat['warna'] ?></td>
                                                 <td><?= $datat['lari'] ?></td>
@@ -487,9 +507,11 @@
                                                 <select name="nis" class="form-control">
                                                 <option style="display:none;">-- pilih salah satu --</option>
                                                 <?php 
-                                                    $w = mysqli_query($conn, "SELECT * FROM tbl_siswa WHERE id_jurusan=2");
+                                                    $w = mysqli_query($conn, "SELECT tbl_siswa.nis as Nis, tbl_siswa.nama_siswa as Nama FROM tbl_siswa
+                                                                            LEFT OUTER JOIN tbl_wawancara ON tbl_siswa.nis=tbl_wawancara.nis
+                                                                            WHERE tbl_siswa.id_jurusan=2 AND tbl_wawancara.nis IS NULL");
                                                     while($dataw = mysqli_fetch_array($w)){
-                                                        echo "<option value=$dataw[nis]>($dataw[nis]) $dataw[nama_siswa]</option>";
+                                                        echo "<option value=$dataw[Nis]>($dataw[Nis]) $dataw[Nama]</option>";
                                                     }
                                                 ?>
                                             </select>
@@ -524,6 +546,7 @@
                                             <th>No</th>
                                             <th>Id Wawancara</th>
                                             <th>Nis</th>
+                                            <th>Nama Lengkap Siswa</th>
                                             <th>Nilai</th>
                                             <th>Status Wawancara</th>
                                             <?php if ($auth['role'] == 1){ ?>
@@ -540,7 +563,8 @@
                                             <tr>
                                                 <td><?= $noy ?></td>
                                                 <td><span class="label label-success"><?= $datay['id_wawancara'] ?></span></td>
-                                                <td><span class="label label-primary"><?= $datay['nis'].'</span> '.$datay['nama_siswa'] ?></td>
+                                                <td><span class="label label-primary"><?= $datay['nis'] ?></span></td>
+                                                <td><?= $datay['nama_siswa'] ?></td>
                                                 <td><?= $datay['nilai'] ?></td>
                                                 <td><?= getStatusRemedial($datay['status_wawancara']) ?></td>
                                                 <?php if ($auth['role'] == 1){ ?>

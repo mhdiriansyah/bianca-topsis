@@ -142,7 +142,8 @@
                             </tr>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
+                                <th>Nis</th>
+                                <th>Nama Lengkap Siswa</th>
                                 <th>C1</th>
                                 <th>C2</th>
                                 <th>C3</th>
@@ -157,7 +158,8 @@
                             for ($a=0;$a<count($isi);$a++){
                                 echo '<tr>'; 
                                 echo '<td>'.$no.'.</td>';
-                                echo '<td><span class="label label-info">'.$isi[$a]['nis'].'</span> '.$isi[$a]['nama'].'</td>';
+                                echo '<td><span class="label label-info">'.$isi[$a]['nis'].'</span></td>';
+                                echo '<td>'.$isi[$a]['nama'].'</td>';
                                 for ($b=0;$b<count($isi[$a]['kriteria']);$b++){
                                     echo '<td>'.$isi[$a]['kriteria'][$b].'</td>';
                                 }
@@ -182,7 +184,8 @@
                             </tr>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
+                                <th>Nis</th>
+                                <th>Nama Lengkap Siswa</th>
                                 <th>C1</th>
                                 <th>C2</th>
                                 <th>C3</th>
@@ -197,7 +200,8 @@
                             for ($a=0;$a<count($isi);$a++){
                                 echo '<tr>'; 
                                 echo '<td>'.$no.'.</td>';
-                                echo '<td><span class="label label-info">'.$isi[$a]['nis'].'</span> '.$isi[$a]['nama'].'</td>';
+                                echo '<td><span class="label label-info">'.$isi[$a]['nis'].'</span></td>';
+                                echo '<td>'.$isi[$a]['nama'].'</td>';
                                 for ($b=0;$b<count($isi[$a]['kriteria']);$b++){
                                     echo '<td>'.$isi[$a]['matriks_ternormalisasi'][$b].'</td>';
                                 }
@@ -222,7 +226,8 @@
                             </tr>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
+                                <th>Nis</th>
+                                <th>Nama Lengkap Siswa</th>
                                 <th>C1</th>
                                 <th>C2</th>
                                 <th>C3</th>
@@ -237,7 +242,8 @@
                             for ($a=0;$a<count($isi);$a++){
                                 echo '<tr>'; 
                                 echo '<td>'.$no.'.</td>';
-                                echo '<td><span class="label label-info">'.$isi[$a]['nis'].'</span> '.$isi[$a]['nama'].'</td>';
+                                echo '<td><span class="label label-info">'.$isi[$a]['nis'].'</span></td>';
+                                echo '<td>'.$isi[$a]['nama'].'</td>';
                                 for ($b=0;$b<count($isi[$a]['kriteria']);$b++){
                                     echo '<td>'.$isi[$a]['matriks_kinerja'][$b].'</td>';
                                 }
@@ -268,7 +274,8 @@
                             </tr>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
+                                <th>Nis</th>
+                                <th>Nama Lengkap Siswa</th>
                                 <th>Solusi Ideal Positif</th>
                                 <th>Solusi Ideal Negatif</th>
                             </tr>
@@ -279,7 +286,8 @@
                             for ($a=0;$a<count($isi);$a++){
                                 echo '<tr>';
                                 echo '<td>'.$no.'</td>';
-                                echo '<td><span class="label label-info">'.$isi[$a]['nis'].'</span> '.$isi[$a]['nama'].'</td>';
+                                echo '<td><span class="label label-info">'.$isi[$a]['nis'].'</span></td>';
+                                echo '<td>'.$isi[$a]['nama'].'</td>';
                                 echo '<td><span class="label label-success">'.$isi[$a]['distance_positif'].'</span></td>';
                                 echo '<td><span class="label label-danger">'.$isi[$a]['distance_negatif'].'</span></td>';
                                 echo '</tr>';
@@ -297,7 +305,8 @@
                             </tr>
                             <tr>
                                 <th>No</th>
-                                <th>Nama</th>
+                                <th>Nis</th>
+                                <th>Nama Lengkap Siswa</th>
                                 <th>Nilai Preferensi</th>
                             </tr>
                         </thead>
@@ -310,7 +319,8 @@
                             while($datam = mysqli_fetch_array($m)){
                                 echo '<tr>';
                                 echo '<td>'.$no.'</td>';
-                                echo '<td><span class="label label-info">'.$datam['nis'].'</span> '.$datam['nama_siswa'].'</td>';
+                                echo '<td><span class="label label-info">'.$datam['nis'].'</span></td>';
+                                echo '<td>'.$datam['nama_siswa'].'</td>';
                                 echo '<td><span class="label label-success">'.$datam['nilai_ranking'].'</span></td>';
                                 echo '</tr>';
                             $no++; 

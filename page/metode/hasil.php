@@ -20,7 +20,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th colspan="4">Data Siswa</th>
+                                <th colspan="5">Data Siswa</th>
                             </tr>
                             <tr>
                                 <th>No</th>

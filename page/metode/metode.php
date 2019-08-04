@@ -138,7 +138,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th colspan="8">Matriks Keputusan R</th>
+                                <th colspan="9">Matriks Keputusan R</th>
                             </tr>
                             <tr>
                                 <th>No</th>
@@ -167,7 +167,7 @@
                             $no++; 
                             }
                             echo '<tr>';
-                            echo '<td class="pembagi" colspan="2">Akar Pembagi</td>';
+                            echo '<td class="pembagi" colspan="3">Akar Pembagi</td>';
                             for ($b=0;$b<count($sum1Akar);$b++){
                                 echo '<td><span class="label label-warning">'.$sum1Akar[$b].'</span></td>';
                             }
@@ -180,7 +180,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th colspan="8">Matriks Ternormalisasi Terbobot</th>
+                                <th colspan="9">Matriks Ternormalisasi Terbobot</th>
                             </tr>
                             <tr>
                                 <th>No</th>
@@ -209,7 +209,7 @@
                             $no++; 
                             }
                             echo '<tr>';
-                            echo '<td class="pembagi" colspan="2">Nilai Terbobot dari Tiap Kriteria</td>';
+                            echo '<td class="pembagi" colspan="3">Nilai Terbobot dari Tiap Kriteria</td>';
                             for ($b=0;$b<count($bobotKriteria);$b++){
                                 echo '<td><span class="label label-warning">'.$bobotKriteria[$b].'</span></td>';
                             }
@@ -222,7 +222,7 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th colspan="8">Matriks Kinerja Bobot</th>
+                                <th colspan="9">Matriks Kinerja Bobot</th>
                             </tr>
                             <tr>
                                 <th>No</th>
@@ -251,13 +251,13 @@
                             $no++; 
                             }
                             echo '<tr>';
-                            echo '<td class="positif" colspan="2">Solusi Ideal Positif +</td>';
+                            echo '<td class="positif" colspan="3">Solusi Ideal Positif +</td>';
                             for ($a=0;$a<count($solusiIdealPositif);$a++){
                                 echo '<td><span class="label label-success">'.$solusiIdealPositif[$a].'</span></td>';
                             }
                             echo '</tr>';
                             echo '<tr>';
-                            echo '<td class="negatif" colspan="2">Solusi Ideal Negatif -</td>';
+                            echo '<td class="negatif" colspan="3">Solusi Ideal Negatif -</td>';
                             for ($a=0;$a<count($solusiIdealNegatif);$a++){
                                 echo '<td><span class="label label-danger">'.$solusiIdealNegatif[$a].'</span></td>';
                             }
